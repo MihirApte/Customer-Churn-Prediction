@@ -1,0 +1,9 @@
+{
+  "monthly_charge": 64,
+  "annual_revenue": 768,
+  "offer_cost": 80,
+  "retention_rate": 0.3,
+  "optimal_threshold": 0.11,
+  "n_test_customers": 1407,
+  "saving_per_customer_optimal": 200.21947405828
+}
