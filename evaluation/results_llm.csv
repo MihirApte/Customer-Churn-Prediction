@@ -1,0 +1,248 @@
+cid,score,tier,verdict,mode,attempts,llm_error,actions,unsupported_numbers,error,plan
+4695,0.639,HIGH,JUSTIFIED,llm,1,0,3,,,"Recommended actions:
+1. Run a proactive line and speed check, fix any issues, and offer a service credit if a quality problem is found. [PB-05]
+2. Invite the customer to switch to automatic bank transfer or credit card payment with a small one‑off incentive and provide a one‑step link. [PB-08]
+3. Review all phone lines, remove any idle lines, and propose a multi‑line bundle with a lower price per line. [PB-11]
+
+Cost check: The offer costs EUR 80 and is expected to generate a net gain of EUR +28; with a real churn rate of similar customers at 38.0%, which is above the break‑even churn threshold of 28.2%, the retention offer is justified."
+2152,0.723,CRITICAL,JUSTIFIED,llm,1,0,4,,,"Recommended actions:
+1. Check how much the customer actually uses the streaming add‑ons and suggest a cheaper tier if usage is low. [PB-10]
+2. Offer a bundle that groups streaming with services they already use for a lower combined price. [PB-10]
+3. Run a proactive line and speed check and fix any problems before the customer complains. [PB-05]
+4. Check for recent outages or repeat support contacts on the account and follow up on them personally. [PB-05]
+
+Cost check: The paid offer costs EUR 80 and is expected to generate a net value of EUR +153, well above the break‑even churn rate of 20.8%."
+3281,0.827,CRITICAL,JUSTIFIED,llm,1,0,3,,,"Recommended actions:
+1. Run a proactive line and speed check and fix any problems before the customer complains. [PB-05]
+2. Check how much the customer actually uses the streaming add‑ons and suggest a cheaper tier if usage is low. [PB-10]
+3. Review the lines and offer a multi‑line or family bundle with a lower price per line. [PB-11]
+
+Cost check: The offer cost is EUR 80 with an expected value of EUR +128, and the real churn rate of similar customers is 60.6%, well above the 23.3% break‑even threshold."
+5830,0.874,CRITICAL,JUSTIFIED,llm,1,0,3,,,"Recommended actions:
+1. Run a proactive line and speed check, fix any problems, and follow up personally. [PB-05]
+2. Invite the customer to switch to automatic bank transfer or credit card payment with a small one‑off incentive and provide a one‑step link. [PB-08]
+3. Review all phone lines, remove any idle lines and offer a multi‑line/family bundle at a lower price per line. [PB-11]
+
+Cost check: The paid offer costs EUR 80, the expected value is EUR +85, and the real churn rate of similar customers is 60.6%, well above the 29.5% break‑even threshold, so the offer is justified."
+1584,0.441,HIGH,MARGINAL,llm,1,0,2,,,"Recommended actions:
+1. Invite the customer to switch to automatic bank transfer or credit card payment, explain the convenience and provide a one‑step link to make the change easy. [PB-08]  
+2. Contact the customer a month before the first anniversary to review how the service is working, offer a plan review to ensure the best‑value option, and introduce a loyalty benefit for staying beyond the first year. [PB-02]
+
+Cost check: The expected value of a paid offer is only +9 EUR (range –4 to +22) with a break‑even churn rate of 34.2 %; given a real churn rate of 38 % for similar customers, the financial benefit is uncertain, so the cheapest actions are preferred."
+982,0.448,HIGH,JUSTIFIED,llm,1,0,3,,,"Recommended actions:
+1. Run a proactive line and speed check and fix any problems before the customer complains. [PB-05]  
+2. Offer a one‑year contract with a modest benefit such as a small monthly saving or a free service upgrade, presented as a better deal. [PB-03]  
+3. Review the lines and offer a multi‑line or family bundle with a lower price per line, removing any idle lines. [PB-11]
+
+Cost check: The offer costs EUR 80 and is expected to generate a net gain of EUR +30; with a similar‑customer churn rate of 38 % (well above the 27.6 % break‑even threshold), the paid retention offer is justified."
+3777,0.633,HIGH,JUSTIFIED,llm,1,0,3,,,"Recommended actions:
+1. Run a proactive line and speed check and fix any problems before the customer complains. [PB-05]
+2. Offer a bundle that groups streaming with services they already use for a lower combined price. [PB-10]
+3. Check how much the customer actually uses the streaming add‑ons and suggest a cheaper tier if usage is low. [PB-10]
+
+Cost check: The paid offer costs EUR 80 and is expected to generate a net value of EUR +64, which aligns with the justified verdict for this high‑risk customer."
+2362,0.903,CRITICAL,JUSTIFIED,llm,1,0,3,,,"Recommended actions:
+1. Make a proactive welcome check‑in call or message to confirm the service works as expected and explain the first bill. [PB-01]
+2. Run a proactive line and speed check and fix any problems before the customer complains. [PB-05]
+3. Offer a one‑year contract with a modest benefit such as a small monthly saving or a free service upgrade, presented as a better deal. [PB-03]
+
+Cost check: The retention offer costs EUR 80 and is expected to generate a net value of +EUR 107, well above the break‑even requirement of a 26.0% churn rate. Since similar customers have a real churn rate of 60.6%, the offer is justified."
+2270,0.944,CRITICAL,JUSTIFIED,llm,1,0,3,,,"Recommended actions:
+1. Invite the customer to switch to automatic bank transfer or credit card payment with a small one‑off incentive. [PB-08]
+2. Make a proactive welcome check‑in call in the first weeks to confirm the service works as expected and resolve any issues. [PB-01]
+3. Run a proactive line and speed check and fix any problems before the customer complains. [PB-05]
+
+Cost check: The paid retention offer costs EUR 80, with an expected value of EUR +83 and an assumed retention rate of 30%, which exceeds the break‑even churn rate of 29.8%; therefore the offer is justified."
+3351,0.618,HIGH,MARGINAL,llm,1,0,3,,,"Recommended actions:
+1. Make a proactive welcome check‑in call in the first weeks to confirm the service works as expected and resolve any issues quickly. [PB-01]
+2. Invite the customer to switch to automatic bank transfer or credit‑card payment with a small one‑off incentive and explain the convenience of no missed payments. [PB-08]
+3. Offer a one‑year contract that includes a modest benefit such as a small monthly saving, presented as a better deal rather than a lock‑in. [PB-03]
+
+Cost check: The offer cost is EUR 80 with an assumed 30% retention rate, giving an expected value of only EUR +1 (range EUR ‑10 to +13). Because the real churn rate of similar customers (38.0%) is just above the break‑even threshold (37.5%), the financial benefit is uncertain."
+1767,0.832,CRITICAL,JUSTIFIED,llm,1,0,3,,,"Recommended actions:
+1. Make a proactive welcome check‑in call or message to confirm the service works and clearly explain the first bill. [PB-01]  
+2. Run a proactive line and speed check and fix any problems before the customer experiences issues. [PB-05]  
+3. Offer a bundled package that combines the streaming TV add‑on with other services for a lower combined price. [PB-10]
+
+Cost check: The paid offer costs EUR 80 and is expected to generate EUR +92 in value, while the real churn rate of similar customers (60.6%) is well above the break‑even churn rate of 28.1%, confirming the offer is justified."
+3725,0.764,CRITICAL,JUSTIFIED,llm,1,0,3,,,"Recommended actions:
+1. Run a proactive line and speed check and fix any problems before the customer complains. [PB-05]
+2. Make a proactive welcome check‑in call or message in the first weeks to confirm the service works as expected. [PB-01]
+3. Invite the customer to switch to automatic bank transfer or credit card payment with a small one‑off incentive. [PB-08]
+
+Cost check: The paid retention offer costs EUR 80 and is expected to generate a net value of EUR +72, confirming the justified verdict."
+2872,0.549,HIGH,JUSTIFIED,llm,1,0,3,,,"Recommended actions:
+1. Run a proactive line and speed check and fix any problems before the customer complains. [PB-05]  
+2. Review the lines and offer a multi-line or family bundle with a lower price per line. [PB-11]  
+3. Check how much the customer actually uses the streaming add‑ons and suggest a cheaper tier if usage is low. [PB-10]  
+
+Cost check: The real churn rate of similar customers is 38.0%, well above the 22.4% break‑even threshold, so the €80 paid offer with an expected +€56 value is justified."
+1407,0.725,CRITICAL,JUSTIFIED,llm,1,0,3,,,"Recommended actions:
+1. Invite the customer to switch to automatic bank transfer or credit card payment with a small one‑off incentive and provide a one‑step link to do so. [PB-08]
+2. Run a proactive line and speed check, fix any problems, and follow up on any recent outages or support contacts. [PB-05]
+3. Review the customer's streaming TV usage and propose a lower‑cost bundle that combines streaming with other services they already have. [PB-10]
+
+Cost check: The offer cost is EUR 80, the expected value of a paid offer is EUR +104, and the real churn rate of similar customers (60.6%) is well above the break‑even churn rate of 26.4%, confirming the offer is justified."
+113,0.73,CRITICAL,JUSTIFIED,llm,1,0,4,,,"Recommended actions:
+1. Run a proactive line and speed check and fix any problems before the customer complains. [PB-05]
+2. Offer a service credit if the customer has had a real quality problem. [PB-05]
+3. Invite the customer to switch to automatic bank transfer or credit card payment with a small one‑off incentive. [PB-08]
+4. Make the switch easy with a one‑step link or a short call. [PB-08]
+
+Cost check: The offer cost is EUR 80 and the expected value of a paid offer is EUR +87, well above the break‑even churn threshold of 29.0%. With a real churn rate of similar customers at 60.6%, the paid retention offer is justified."
+3294,0.891,CRITICAL,JUSTIFIED,llm,1,0,3,,,"Recommended actions:
+1. Check the customer's actual usage of streaming TV and movies add‑ons and propose a lower‑cost tier if usage is low. [PB-10]
+2. Offer a bundled package that combines the streaming services with other services they already have for a reduced combined price. [PB-10]
+3. Highlight exclusive content or features in the streaming catalog that the customer may not have discovered yet. [PB-10]
+
+Cost check: The paid offer costs EUR 80 and is expected to deliver a net value of EUR +176, confirming the justification for a retention offer."
+1982,0.47,HIGH,JUSTIFIED,llm,1,0,4,,,"Recommended actions:
+1. Run a proactive line and speed check and fix any problems before the customer complains. [PB-05]  
+2. Check for recent outages or repeat support contacts on the account and follow up on them personally. [PB-05]  
+3. Offer a bundle that groups streaming with services they already use for a lower combined price. [PB-10]  
+4. Highlight content or features the customer may not have discovered. [PB-10]  
+
+Cost check: The offer cost is EUR 80 with an expected value of EUR +42 and a break‑even churn rate of 24.9%; the real churn rate of similar customers is 38.0%, so the paid retention offer is justified."
+2963,0.574,HIGH,JUSTIFIED,llm,1,0,4,,,"Recommended actions:
+1. Run a proactive line and speed check and fix any problems before the customer complains. [PB-05]
+2. Make a proactive welcome check-in call or message in the first weeks to confirm the service works as expected. [PB-01]
+3. Invite the customer to switch to automatic bank transfer or credit card payment with a small one‑off incentive. [PB-08]
+4. Review the plan and add‑ons with the customer and remove anything they do not use. [PB-06]
+
+Cost check: The offer cost is EUR 80 with an expected value of EUR +44, and the real churn rate of similar customers (38.0%) exceeds the break‑even churn rate (24.6%), confirming the justification."
+6181,0.883,CRITICAL,JUSTIFIED,llm,1,0,4,,,"Recommended actions:
+1. Make a proactive welcome check‑in call or message in the first weeks to confirm the service works, resolve any setup or billing issues quickly, and explain the first bill clearly. [PB-01]
+2. Run a proactive line and speed check for the fibre optic service, fix any problems before they arise, and follow up personally on any recent outages or support contacts. [PB-05]
+3. Invite the customer to switch to automatic bank transfer or credit‑card payment with a small one‑off incentive and provide a one‑step link to make the change easy. [PB-08]
+4. Review the current plan and add‑ons, remove unused items, and offer a better‑fitting plan or temporary price reduction while explaining the value included in the price. [PB-06]
+
+Cost check: The paid offer costs EUR 80, with an assumed retention rate of 30% and an expected value of EUR +96, exceeding the break‑even churn threshold of 27.6%, so the offer is justified."
+3838,0.894,CRITICAL,JUSTIFIED,llm,1,0,3,,,"Recommended actions:
+1. Invite the customer to switch to automatic bank transfer or credit card payment with a small one‑off incentive. [PB-08]
+2. Make a proactive welcome check‑in call or message in the first weeks to confirm the service works as expected. [PB-01]
+3. Run a proactive line and speed check and fix any problems before the customer complains. [PB-05]
+
+Cost check: The offer costs EUR 80 and is expected to generate EUR +81 in value, exceeding the break‑even churn threshold of 30.1%, so the retention offer is justified."
+683,0.838,CRITICAL,JUSTIFIED,llm,1,0,3,,,"Recommended actions:
+1. Make a proactive welcome check‑in call or message in the first weeks to confirm the service works as expected and resolve any setup or billing issues quickly. [PB-01]
+2. Run a proactive line and speed check for the fibre optic service and fix any problems before the customer complains. [PB-05]
+3. Offer automatic payment as a convenience and include a simple switch option in the next bill or message. [PB-09]
+
+Cost check: The paid offer costs EUR 80 with an assumed retention rate of 30%, yielding an expected value of EUR +75, which exceeds the break‑even churn threshold of 31.3% given the real churn rate of similar customers at 60.6%."
+267,0.342,MEDIUM,MARGINAL,llm,1,0,3,,,"Recommended actions:
+1. Run a proactive line and speed check and fix any problems before the customer complains. [PB-05]
+2. Check for recent outages or repeat support contacts on the account and follow up on them personally. [PB-05]
+3. Check how much the customer actually uses the streaming add‑ons and suggest a cheaper tier if usage is low. [PB-10]
+
+Cost check: The expected value of a paid offer is EUR ‑16 (range EUR ‑30 to EUR 0) and the real churn rate of similar customers (16.8%) is below the break‑even churn rate of 21.2%, so the financial benefit is uncertain."
+3518,0.911,CRITICAL,JUSTIFIED,llm,1,0,2,,,"Recommended actions:
+1. Run a proactive line and speed check on the fibre optic service and fix any identified problems before the customer experiences issues. [PB-05]
+2. Review all phone lines on the account, remove any idle lines, and propose a multi‑line/family bundle with a lower price per line. [PB-11]
+
+Cost check: The paid retention offer costs EUR 80, assumes a 30% retention rate and yields an expected value of +EUR 105, comfortably exceeding the break‑even churn threshold of 26.2% given the real churn rate of similar customers at 60.6%."
+3703,0.709,CRITICAL,JUSTIFIED,llm,1,0,3,,,"Recommended actions:
+1. Make a proactive welcome check-in call or message in the first weeks to confirm the service works as expected. [PB-01]
+2. Explain the first bill clearly so there is no surprise at the first payment. [PB-01]
+3. Offer automatic payment as a convenience and include a simple switch option in the next bill or message. [PB-09]
+
+Cost check: The paid retention offer costs EUR 80 and is expected to generate a net value of EUR +31, while the real churn rate of similar customers (60.6%) is well above the break‑even churn rate of 43.8%."
+6780,0.806,CRITICAL,MARGINAL,llm,1,0,4,,,"Recommended actions:
+1. Invite the customer to switch to automatic bank transfer or credit card payment with a small one‑off incentive. [PB-08]  
+2. Explain the convenience of automatic payment: no missed payments and no monthly action needed. [PB-08]  
+3. Check how much the customer actually uses the streaming TV add‑on and suggest a cheaper tier if usage is low. [PB-10]  
+4. Offer a bundled package that combines streaming with other services they already use for a lower combined price. [PB-10]
+
+Cost check: The expected value of a paid offer is only +7 EUR (range –1 to +14 EUR) with a break‑even churn of 56.0%, while the real churn of similar customers is 60.6%, making the financial benefit uncertain."
+6472,0.714,CRITICAL,JUSTIFIED,llm,1,0,4,,,"Recommended actions:
+1. Make a proactive welcome check‑in call or message to confirm the service works as expected. [PB-01]
+2. Resolve any setup, billing or speed issues quickly and personally while the customer is still forming an opinion. [PB-01]
+3. Run a proactive line and speed check and fix any problems before the customer complains. [PB-05]
+4. Offer a service credit if the customer has experienced a real quality problem. [PB-05]
+
+Cost check: The offer costs EUR 80 with an assumed 30% retention rate, and the real churn rate of similar customers (60.6%) is well above the 31.8% break‑even threshold, confirming the paid retention offer is justified."
+6956,0.75,CRITICAL,JUSTIFIED,llm,1,0,3,,,"Recommended actions:
+1. Invite the customer to switch to automatic bank transfer or credit card payment with a small one‑off incentive. [PB-08]  
+2. Run a proactive line and speed check and fix any problems before the customer complains. [PB-05]  
+3. Check how much the customer actually uses the streaming add‑ons and suggest a cheaper tier if usage is low. [PB-10]  
+
+Cost check: The offer costs EUR 80, the expected value of a paid offer is EUR +115, and the real churn rate of similar customers (60.6%) is well above the break‑even churn rate of 24.8%, confirming the justification."
+931,0.948,CRITICAL,JUSTIFIED,llm,1,0,3,,,"Recommended actions:
+1. Make a proactive welcome check-in call or message in the first weeks to confirm the service works as expected. [PB-01]
+2. Run a proactive line and speed check and fix any problems before the customer complains. [PB-05]
+3. Review the lines and offer a multi-line or family bundle with a lower price per line. [PB-11]
+
+Cost check: The offer cost is EUR 80, the expected value of the paid offer is EUR +105, and the system’s verdict confirms the retention offer is justified."
+2666,0.299,MEDIUM,MARGINAL,llm,1,0,3,,,"Recommended actions:
+1. Invite the customer to switch to automatic bank transfer or credit card payment with a one‑step link [PB-08]
+2. Run a proactive line and speed check and fix any problems before the customer notices [PB-05]
+3. Review the customer's streaming TV usage and suggest a cheaper tier if usage is low [PB-10]
+
+Cost check: The expected value of a paid offer is EUR ‑16, and with a real churn rate of 16.8% (below the 21.1% break‑even) the financial benefit is uncertain."
+6597,0.757,CRITICAL,JUSTIFIED,llm,1,0,4,,,"Recommended actions:
+1. Run a proactive line and speed check and fix any problems before the customer complains. [PB-05]
+2. Check for recent outages or repeat support contacts on the account and follow up on them personally. [PB-05]
+3. Check how much the customer actually uses the streaming add‑ons and suggest a cheaper tier if usage is low. [PB-10]
+4. Offer a bundle that groups streaming with services they already use for a lower combined price. [PB-10]
+
+Cost check: The paid offer costs EUR 80 and is expected to generate a net value of EUR +149, well above the break‑even churn threshold of 21.2%, confirming the justification."
+6445,0.49,HIGH,JUSTIFIED,llm,1,0,3,,,"Recommended actions:
+1. Offer a one‑year contract with a modest benefit such as a small monthly saving or a free service upgrade, presented as a better deal rather than a lock‑in. [PB-03]
+2. Run a proactive line and speed check and fix any problems before the customer complains. [PB-05]
+3. Review the plan and add‑ons with the customer and remove anything they do not use. [PB-06]
+
+Cost check: The paid offer costs EUR 80 and is expected to deliver a net value of EUR +31, meeting the justified retention verdict."
+4276,0.858,CRITICAL,JUSTIFIED,llm,1,0,4,,,"Recommended actions:
+1. Invite the customer to switch to automatic bank transfer or credit card payment with a small one‑off incentive and provide a one‑step link. [PB-08]  
+2. Make a proactive welcome check‑in call in the first weeks to confirm the fibre service works as expected and resolve any setup or speed issues personally. [PB-01]  
+3. Run a proactive line and speed check for the fibre optic connection, fix any problems, and follow up on recent outages or support contacts. [PB-05]  
+4. Combine the service quality check with a free trial of tech support, giving the customer a direct support contact for the first weeks. [PB-18]
+
+Cost check: The offer cost is EUR 80 with an expected value of EUR +73, and the real churn rate of similar customers (60.6%) far exceeds the break‑even churn rate of 31.7%."
+3557,0.529,HIGH,JUSTIFIED,llm,1,0,3,,,"Recommended actions:
+1. Run a proactive line and speed check and fix any problems before the customer complains. [PB-05]
+2. Offer a bundle that groups streaming with services they already use for a lower combined price. [PB-10]
+3. Check how much the customer actually uses the streaming add‑ons and suggest a cheaper tier if usage is low. [PB-10]
+
+Cost check: The paid retention offer costs EUR 80 and is expected to deliver a net gain of EUR +44, meeting the justified verdict."
+1572,0.419,HIGH,JUSTIFIED,llm,1,0,2,,,"Recommended actions:
+1. Run a proactive line and speed check and fix any problems before the customer complains. [PB-05]
+2. Offer a bundle that groups streaming with services they already use for a lower combined price. [PB-10]
+
+Cost check: The offer cost is EUR 80 and the expected value of the paid offer is EUR +55, which is above the break‑even requirement (real churn rate of similar customers is 38% versus the 22.5% threshold)."
+5106,0.573,HIGH,JUSTIFIED,llm,1,0,3,,,"Recommended actions:
+1. Run a proactive line and speed check, fix any issues, and offer a service credit if needed [PB-05]
+2. Invite the customer to switch to automatic bank transfer or credit card payment with a small one‑off incentive and provide a one‑step link [PB-08]
+3. Review all phone lines, remove any idle ones and propose a multi‑line bundle at a lower price per line [PB-11]
+
+Cost check: The paid retention offer costs EUR 80 and is expected to generate a net value of EUR +34, which exceeds the break‑even requirement given the real churn rate of similar customers (38%)."
+5673,0.919,CRITICAL,MARGINAL,llm,1,0,4,,,"Recommended actions:
+1. Make a proactive welcome check‑in call or message in the first weeks to confirm the service works as expected. [PB-01]
+2. Resolve any setup, billing or speed issues quickly and personally while the customer is still forming an opinion. [PB-01]
+3. Check how much the customer actually uses the streaming add‑ons and suggest a cheaper tier if usage is low. [PB-10]
+4. Highlight content or features the customer may not have discovered. [PB-10]
+
+Cost check: With an offer cost of EUR 80 and an assumed retention rate of 30%, the expected value is EUR ‑4 (range EUR ‑11 to EUR +3), below the break‑even churn rate of 63.5% versus the observed 60.6% for similar customers, so the financial benefit is uncertain."
+1700,0.417,HIGH,JUSTIFIED,llm,1,0,3,,,"Recommended actions:
+1. Invite the customer to switch to automatic bank transfer or credit card payment with a small one‑off incentive. [PB-08]
+2. Review the lines and offer a multi‑line or family bundle with a lower price per line. [PB-11]
+3. Run a proactive line and speed check and fix any problems before the customer complains. [PB-05]
+
+Cost check: The paid offer costs EUR 80 and is expected to generate EUR +44 in value, and with a real churn rate of similar customers at 38.0% (well above the 24.6% break‑even threshold), the retention offer is justified."
+4747,0.501,HIGH,JUSTIFIED,llm,1,0,3,,,"Recommended actions:
+1. Run a proactive line and speed check, fix any issues, and offer a service credit if a quality problem is found. [PB-05]
+2. Invite the customer to switch to automatic bank transfer or credit card payment with a small one‑off incentive and provide a one‑step link. [PB-08]
+3. Review the customer's streaming TV usage and suggest a cheaper tier or bundled package, highlighting undiscovered content. [PB-10]
+
+Cost check: The offer cost is EUR 80 with an expected value of EUR +45, and the real churn rate of similar customers (38.0%) is well above the break‑even churn rate of 24.4%, so a paid retention offer is justified."
+2459,0.938,CRITICAL,JUSTIFIED,llm,1,0,3,,,"Recommended actions:
+1. Make a proactive welcome check‑in call or message in the first weeks to confirm the service works and resolve any setup or billing issues quickly. [PB-01]
+2. Run a proactive line and speed check and fix any problems before the customer complains. [PB-05]
+3. Invite the customer to switch to automatic bank transfer or credit‑card payment with a small one‑off incentive and provide a one‑step link to make the change easy. [PB-08]
+
+Cost check: The real churn rate of similar customers is 60.6%, far above the 28.8% break‑even threshold, so the justified paid retention offer (cost EUR 80, expected value EUR +88) is supported."
+5588,0.457,HIGH,JUSTIFIED,llm,1,0,3,,,"Recommended actions:
+1. Run a proactive line and speed check and fix any problems before the customer complains. [PB-05]
+2. Offer a bundle that groups streaming with services they already use for a lower combined price. [PB-10]
+3. Review the lines and offer a multi-line or family bundle with a lower price per line. [PB-11]
+
+Cost check: The paid offer costs EUR 80 and is expected to generate a net value of EUR +44, confirming the justified retention decision."

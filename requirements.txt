@@ -6,3 +6,6 @@ pandas==2.2.3
 shap==0.47.2
 scikit-learn==1.6.1
 xgboost==2.1.4
+sentence-transformers>=3.0.0
+python-dotenv>=1.0.0
+groq>=0.11.0

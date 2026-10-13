@@ -1,0 +1,254 @@
+{
+  "metadata": {
+    "author": "Mihir Apte",
+    "description": "Retention playbook for the churn advisor. Illustrative retention ideas written by the project author. This is NOT company data and the actions have NOT been validated by A/B tests.",
+    "evidence_source": "Churn rates in the 'evidence' fields were measured on the cleaned IBM Telco Customer Churn dataset (7,032 customers, overall churn 26.6%). They describe association, not proof that an action would change behaviour.",
+    "version": 1
+  },
+  "entries": [
+    {
+      "id": "PB-01",
+      "title": "New customer in the first six months",
+      "target_features": ["tenure", "TotalCharges"],
+      "situation": "Customer has a very short tenure, joined in the last few months and is still in the early part of their relationship with the company. New customers who have not yet settled in are the most likely group to leave.",
+      "actions": [
+        "Make a proactive welcome check-in call or message in the first weeks to confirm the service works as expected.",
+        "Resolve any setup, billing or speed issues quickly and personally while the customer is still forming an opinion.",
+        "Explain the first bill clearly so there is no surprise at the first payment."
+      ],
+      "evidence": "Customers with tenure of 6 months or less churned at 53.3% (n=1,470), against 14.0% for customers with more than 24 months (n=3,833).",
+      "caution": "Early churn is often a service or expectation problem, not a price problem. A discount alone may not fix it."
+    },
+    {
+      "id": "PB-02",
+      "title": "Customer approaching the first anniversary",
+      "target_features": ["tenure"],
+      "situation": "Customer has a short to moderate tenure, around 7 to 12 months, and is nearing the point where an introductory period or first-year commitment may end. Risk of leaving is still high but the customer has had time to form an opinion.",
+      "actions": [
+        "Contact the customer a month or two before the anniversary to review how the service is working.",
+        "Offer a plan review so the customer is on the best-value option for their actual usage.",
+        "Introduce a loyalty benefit tied to staying beyond the first year."
+      ],
+      "evidence": "Customers with tenure of 7 to 12 months churned at 35.9% (n=705); 13 to 24 months churned at 28.7% (n=1,024).",
+      "caution": "Reach out before the decision point, not after the customer has already started shopping around."
+    },
+    {
+      "id": "PB-03",
+      "title": "Month-to-month customer: offer a one-year contract",
+      "target_features": ["Contract_One year", "Contract_Two year"],
+      "situation": "Customer is on a month-to-month contract with no commitment, so they can leave at any time. They are not on a one-year or two-year contract. Month-to-month is the contract type with by far the highest churn.",
+      "actions": [
+        "Offer a one-year contract with a clear, modest benefit such as a small monthly saving or a free service upgrade.",
+        "Keep the benefit within the retention offer budget so the offer still pays for itself.",
+        "Present it as a better deal for the customer, not as a lock-in."
+      ],
+      "evidence": "Month-to-month churned at 42.7% (n=3,875), one-year at 11.3% (n=1,472), two-year at 2.8% (n=1,685).",
+      "caution": "Customers who choose long contracts are already more loyal, so the gap overstates what switching a customer to a longer contract would achieve."
+    },
+    {
+      "id": "PB-04",
+      "title": "Long-standing month-to-month customer: loyalty contract",
+      "target_features": ["Contract_One year", "Contract_Two year", "tenure"],
+      "situation": "Customer has stayed a long time, more than two years, but is still on a month-to-month contract. They have shown loyalty without any commitment and could still leave at any time.",
+      "actions": [
+        "Recognise the customer's loyalty and offer a one-year or two-year contract with a loyalty reward.",
+        "Offer a plan check to make sure the long-standing customer is not paying more than newer customers for the same service.",
+        "Use a personal message that thanks them for their time with the company."
+      ],
+      "evidence": "Month-to-month customers with tenure above 24 months churned at 30.9% (n=1,144), compared with 14.0% for all customers above 24 months (n=3,833).",
+      "caution": "Long-tenure customers cost a lot to lose, but check the offer cost against their actual monthly charge before committing."
+    },
+    {
+      "id": "PB-05",
+      "title": "Fibre optic customer: service quality check",
+      "target_features": ["InternetService_Fiber optic"],
+      "situation": "Customer has a fibre optic internet service. Fibre customers churn far more often than DSL customers, possibly because of price, reliability or competition from other providers.",
+      "actions": [
+        "Run a proactive line and speed check and fix any problems before the customer complains.",
+        "Check for recent outages or repeat support contacts on the account and follow up on them personally.",
+        "Offer a service credit if the customer has had a real quality problem."
+      ],
+      "evidence": "Fibre optic customers churned at 41.9% (n=3,096), against 19.0% for DSL (n=2,416) and 7.4% for no internet (n=1,520).",
+      "caution": "The dataset does not say why fibre customers leave. Check the service history before assuming the cause."
+    },
+    {
+      "id": "PB-06",
+      "title": "Fibre optic customer with a high bill: price-to-value review",
+      "target_features": ["InternetService_Fiber optic", "MonthlyCharges"],
+      "situation": "Customer has a fibre optic service and a high monthly charge, so the bill is large and the customer may feel the price is not worth the service.",
+      "actions": [
+        "Review the plan and add-ons with the customer and remove anything they do not use.",
+        "Offer a better-fitting plan or a temporary price reduction if the customer is paying for more speed than they need.",
+        "Explain what is included in the price so the value is visible."
+      ],
+      "evidence": "Fibre customers with monthly charges of 80 or more churned at 37.6% (n=2,399).",
+      "caution": "A price cut on a high-value customer is expensive. Compare the cost of the cut with the revenue that would be lost."
+    },
+    {
+      "id": "PB-07",
+      "title": "High monthly charges: bill review and right-sizing",
+      "target_features": ["MonthlyCharges"],
+      "situation": "Customer pays a high monthly charge compared with the average customer. Higher bills are linked to higher churn, and the customer may be paying for services or speed they do not need.",
+      "actions": [
+        "Offer a free bill review to match the plan to what the customer actually uses.",
+        "Remove unused add-ons or suggest a cheaper bundle that keeps the services they value.",
+        "Send a clear, itemised bill summary so the charges feel fair."
+      ],
+      "evidence": "Customers with monthly charges of 80 or more churned at 34.0% (n=2,676), compared with 15.8% for those paying under 50 (n=2,288).",
+      "caution": "Right-sizing lowers revenue per customer. It pays off only if the saved customer stays long enough."
+    },
+    {
+      "id": "PB-08",
+      "title": "Electronic check payer: move to automatic payment",
+      "target_features": ["PaymentMethod_Electronic check"],
+      "situation": "Customer pays by electronic check, a manual payment method that has to be made each month. They are not on automatic payment by bank transfer or credit card. Manual payment gives the customer a regular chance to reconsider.",
+      "actions": [
+        "Invite the customer to switch to automatic bank transfer or credit card payment with a small one-off incentive.",
+        "Explain the convenience: no missed payments and no monthly action needed.",
+        "Make the switch easy with a one-step link or a short call."
+      ],
+      "evidence": "Electronic check payers churned at 45.3% (n=2,365), against 16.0% for customers on automatic payment (n=3,063).",
+      "caution": "Payment method may be a signal of other things, such as engagement or financial situation, so the switch alone may not remove the risk."
+    },
+    {
+      "id": "PB-09",
+      "title": "Mailed check payer: lower-priority payment nudge",
+      "target_features": ["PaymentMethod_Mailed check"],
+      "situation": "Customer pays by mailed check, a manual payment method that is slower and less convenient than automatic payment.",
+      "actions": [
+        "Offer automatic payment as a convenience, without a large incentive.",
+        "Include a simple switch option in the next bill or message."
+      ],
+      "evidence": "Mailed check payers churned at 19.2% (n=1,604), close to the 16.0% seen for automatic payment (n=3,063) and well below electronic check at 45.3%.",
+      "caution": "Churn for this group is already low, so this is a low-priority, low-cost action. Do not spend a large offer here."
+    },
+    {
+      "id": "PB-10",
+      "title": "Streaming TV or movies customer: content value check",
+      "target_features": ["StreamingTV_Yes", "StreamingMovies_Yes"],
+      "match": "any",
+      "situation": "Customer uses streaming TV or streaming movies add-ons. These entertainment add-ons raise the monthly bill and may be competing with other streaming services the customer already pays for.",
+      "actions": [
+        "Check how much the customer actually uses the streaming add-ons and suggest a cheaper tier if usage is low.",
+        "Offer a bundle that groups streaming with services they already use for a lower combined price.",
+        "Highlight content or features the customer may not have discovered."
+      ],
+      "evidence": "Customers with streaming TV or streaming movies churned at 30.4% (n=3,495), against 26.6% overall.",
+      "caution": "The effect is modest. Do not treat streaming alone as a strong reason for an expensive offer."
+    },
+    {
+      "id": "PB-11",
+      "title": "Multiple phone lines: multi-line bundle",
+      "target_features": ["MultipleLines_Yes"],
+      "situation": "Customer has several phone lines on the account. Multiple lines raise the bill and the customer may be comparing the total cost with other providers' family or multi-line plans.",
+      "actions": [
+        "Review the lines and offer a multi-line or family bundle with a lower price per line.",
+        "Check that every line is still in use and remove idle lines to cut the bill."
+      ],
+      "evidence": "Customers with multiple lines churned at 28.6% (n=2,967), against 25.1% for single-line phone customers (n=3,385).",
+      "caution": "The effect is modest. A multi-line bundle can also increase loyalty because it is harder to move several lines at once."
+    },
+    {
+      "id": "PB-12",
+      "title": "Paperless billing: bill clarity and bill-shock alerts",
+      "target_features": ["PaperlessBilling_Yes"],
+      "situation": "Customer receives paperless, online-only bills. Paperless customers see less of their bill and may be surprised by charges, and they tend to be a newer, more digital group.",
+      "actions": [
+        "Send a short monthly summary explaining the charges in plain language.",
+        "Add an alert when the bill changes noticeably so there is no bill shock.",
+        "Make it easy to ask a question about a charge in one click."
+      ],
+      "evidence": "Paperless billing customers churned at 33.6% (n=4,168), against 16.4% for paper billing (n=2,864).",
+      "caution": "Paperless billing is probably a marker for customer type, not a cause. Treat this as a supporting action, not the main one."
+    },
+    {
+      "id": "PB-13",
+      "title": "No tech support or online security: add-on trial",
+      "target_features": ["TechSupport_Yes", "OnlineSecurity_Yes"],
+      "situation": "Internet customer has no tech support and no online security service. Customers without these protection and support services have higher churn and are less tied in to the provider.",
+      "actions": [
+        "Offer a free trial of tech support or online security so the customer experiences the value.",
+        "Bundle one of these services into a plan review at a low price.",
+        "Follow up after the trial to confirm it was useful."
+      ],
+      "evidence": "Internet customers without tech support churned at 41.6% (n=3,472) versus 15.2% with it (n=2,040); without online security 41.8% versus 14.6% with it (n=2,015).",
+      "caution": "In this model these two features have very low importance (mean absolute SHAP about 0.03), because most of the gap overlaps with contract and internet type. Treat this as a secondary action."
+    },
+    {
+      "id": "PB-14",
+      "title": "Senior customer: assisted support and plan simplification",
+      "target_features": ["SeniorCitizen"],
+      "situation": "Customer is a senior citizen. Senior customers churn more often, and may find complex plans, online-only support and billing harder to manage.",
+      "actions": [
+        "Offer a phone-based or in-person support route and a simple plan summary.",
+        "Check that the plan is simple and that the customer is not paying for features they do not use.",
+        "Use a clear and respectful tone in all contact."
+      ],
+      "evidence": "Senior customers churned at 41.7% (n=1,142), against 23.7% for non-seniors (n=5,890).",
+      "caution": "Age is a sensitive attribute. Use it to adapt the support channel and communication, not to change prices or offer eligibility. Check the applicable equality and data-protection rules."
+    },
+    {
+      "id": "PB-15",
+      "title": "Single-person household: flexible, relevant messaging",
+      "target_features": ["Partner_Yes", "Dependents_Yes"],
+      "situation": "Customer has no partner and no dependents, so the account serves one person. Single-person households tend to have fewer ties to the provider and churn more than households with a partner or dependents.",
+      "actions": [
+        "Highlight flexible plans and services that fit one-person use.",
+        "Offer a personal check-in to confirm the plan still fits their needs."
+      ],
+      "evidence": "Customers with no partner and no dependents churned at 34.2% (n=3,280), against 19.9% for customers with a partner or dependents (n=3,752).",
+      "caution": "Household status is a weak, sensitive signal. Use it only to make messaging relevant, never to decide who gets a better price. Low priority."
+    },
+    {
+      "id": "PB-16",
+      "title": "Stacked risk: new fibre customer on month-to-month",
+      "target_features": ["InternetService_Fiber optic", "Contract_One year", "Contract_Two year", "tenure"],
+      "situation": "Customer combines several risk factors at once: a new customer with short tenure, a fibre optic service and a month-to-month contract. This combination is the highest-risk group in the data.",
+      "actions": [
+        "Escalate to a personal call from a retention specialist, not an automated message.",
+        "Check the service quality first, then offer a one-year contract with a clear benefit.",
+        "Follow up a few weeks later to make sure the issue is resolved."
+      ],
+      "evidence": "Fibre customers on month-to-month with tenure of 12 months or less churned at 70.2% (n=916).",
+      "caution": "With risk this high, a personal conversation is usually worth more than an automatic discount. Spend the budget on the highest-value customers first."
+    },
+    {
+      "id": "PB-17",
+      "title": "Stacked risk: month-to-month and electronic check",
+      "target_features": ["Contract_One year", "Contract_Two year", "PaymentMethod_Electronic check"],
+      "situation": "Customer is on a month-to-month contract and also pays by electronic check. Both the contract and the payment method let the customer leave or reconsider easily every month.",
+      "actions": [
+        "Offer a combined deal: move to a one-year contract and automatic payment together for one benefit.",
+        "Present it as one simple offer, not two separate asks.",
+        "Keep the combined benefit within the offer budget."
+      ],
+      "evidence": "Customers on month-to-month who pay by electronic check churned at 53.7% (n=1,850).",
+      "caution": "Two asks at once can feel pushy. Lead with the benefit to the customer."
+    },
+    {
+      "id": "PB-18",
+      "title": "Stacked risk: fibre customer with no tech support",
+      "target_features": ["InternetService_Fiber optic", "TechSupport_Yes"],
+      "situation": "Customer has a fibre optic internet service but no tech support. They have a premium service with no support safety net, so a technical problem could push them to leave.",
+      "actions": [
+        "Combine a service quality check with a free trial of tech support.",
+        "Give the customer a direct support contact for the first weeks of the trial."
+      ],
+      "evidence": "Fibre customers with no tech support churned at 49.4% (n=2,230).",
+      "caution": "Check the service history first. If the problem is the line, tech support will not fix it."
+    },
+    {
+      "id": "PB-19",
+      "title": "Low expected saving: use a low-cost touch, not an offer",
+      "target_features": [],
+      "situation": "Customer is flagged as at risk, but the expected saving from a retention offer does not clearly exceed the cost of the offer. This usually applies to customers with a lower churn probability or a low monthly charge.",
+      "actions": [
+        "Do not send a costly discount. Use an automated, low-cost message such as a check-in or a service tip.",
+        "Add the customer to a watchlist and re-score them next month.",
+        "Save the paid offers for customers where the expected saving is clearly higher than the cost."
+      ],
+      "evidence": "Offer cost (80 EUR) and retention rate (30%) are assumptions stored in reports/roi_params.json, not measured values.",
+      "caution": "This rule keeps the advisor from recommending offers that lose money."
+    }
+  ]
+}

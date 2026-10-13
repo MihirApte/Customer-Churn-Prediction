@@ -28,8 +28,16 @@ models/xgboost.pkl
 diagnose.py
 find_test_cases.py
 
+# Working draft of evaluation labels, superseded by evaluation/labels/label_sheet.csv
+evaluation/labels/label_review.md
+
 # HuggingFace deployment folder
 hf-deploy/
+
+# API keys and local secrets - never push these (the .env.example template is fine)
+.env
+.env.*
+!.env.example
 
 # Access tokens - never push these
 hf_acc_token.txt
